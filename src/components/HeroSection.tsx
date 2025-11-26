@@ -1,6 +1,4 @@
 import { ArrowRight, Scale, Award } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
-import profileImage from 'figma:asset/aac8dd5eec3e94a6e98fa018e888dfc85da60a82.png';
 
 export function HeroSection() {
   return (
@@ -76,10 +74,10 @@ export function HeroSection() {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-br from-[#BF953F]/20 to-[#FCF6BA]/20 rounded-3xl blur-3xl transform rotate-6"></div>
             <div className="relative">
-              <ImageWithFallback 
-                src={profileImage}
+              <img 
+                src="/henriette.png"
                 alt="Dra. Henriette Brigagão"
-                className="w-full h-auto rounded-3xl shadow-[0_0_80px_rgba(191,149,63,0.3)]"
+                className="w-full h-auto rounded-3xl shadow-[0_0_80px_rgba(191,149,63,0.3)] object-cover"
               />
               {/* Floating Badge */}
               <div className="absolute -bottom-6 -left-6 bg-[#121212] border-2 border-[#BF953F] rounded-2xl p-6 shadow-[0_0_40px_rgba(191,149,63,0.4)]">
